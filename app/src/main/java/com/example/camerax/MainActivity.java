@@ -1,5 +1,5 @@
 package com.example.camerax;
-
+import android.Manifest;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Button enableCamera = findViewById(R.id.enableCamera);
         enableCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 CAMERA_REQUEST_CODE
         );
     }
-
     private void enableCamera() {
         Intent intent = new Intent(this, CameraActivity.class);
         startActivity(intent);
