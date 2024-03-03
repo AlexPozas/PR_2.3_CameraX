@@ -10,23 +10,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
+
+        <ImageView
+            android:id="@+id/foto"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:id="@+id/container"
-            android:textSize="20sp"
-            android:layout_gravity="center"
-            android:text="This is a CameraX test app!"
-            android:gravity="center">
-        </TextView>
+            android:layout_height="550dp" />
 
         <Button
             android:id="@+id/enableCamera"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Open Camera" />
+            android:text="Camera"
+            android:textSize="24sp" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
